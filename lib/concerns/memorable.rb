@@ -9,7 +9,7 @@ module Memorable
     end
   end
 
-  module Instance methods
+  module InstanceMethods
     def initialize
       self.class.all << self
     end
