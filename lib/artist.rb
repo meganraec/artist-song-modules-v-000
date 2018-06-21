@@ -2,13 +2,13 @@ require 'pry'
 
 class Artist
   extend Memorable
-  
+
   attr_accessor :name
   attr_reader :songs
 
   @@artists = []
 
-#find_by_name now exists in the module Findable for use by all classes. 
+#find_by_name now exists in the module Findable for use by all classes.
   # def self.find_by_name(name)
   #   @@artists.detect{|a| a.name == name}
   # end
@@ -22,7 +22,7 @@ class Artist
     @@artists
   end
 
-#reset_all now exists in the module Memorable for all classes. 
+#reset_all now exists in the module Memorable for all classes.
   # def self.reset_all
   #   self.all.clear
   # end
