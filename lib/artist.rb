@@ -28,7 +28,7 @@ class Artist
   #   self.all.clear
   # end
 
-#This method has been moved to module Memorable for use by all classes. 
+#This method has been moved to module Memorable for use by all classes.
   # def self.count
   #   @@artists.count
   # end

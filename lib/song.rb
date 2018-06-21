@@ -2,6 +2,7 @@ require 'pry'
 
 class Song
   extend Memorable
+  include Paramable
 
   attr_accessor :name
   attr_reader :artist
@@ -30,7 +31,7 @@ class Song
     name.downcase.gsub(' ', '-')
   end
 
-#This method has been moved to module Memorable for use by all classes. 
+#This method has been moved to module Memorable for use by all classes.
   # def self.count
   #   self.all.count
   # end
