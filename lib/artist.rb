@@ -42,7 +42,7 @@ class Artist
     songs.each { |song| add_song(song) }
   end
 
-#This method now exists in the Paramable module for use by all classes. 
+#This method now exists in the Paramable module for use by all classes.
   # def to_param
   #   name.downcase.gsub(' ', '-')
   # end
