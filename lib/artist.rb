@@ -16,7 +16,8 @@ class Artist
   # end
 
   def initialize
-    self.class.all << self
+    super
+    # self.class.all << self  This method moved to scope InstanceMethods within module Memorable.
     @songs = []
   end
 
