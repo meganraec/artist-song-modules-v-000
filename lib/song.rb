@@ -10,9 +10,9 @@ class Song
 
   @@songs = []
 
-  def initialize
-    self.class.all << self
-  end
+  # def initialize This method now exists in the InstanceMethods scope of the Memorable module.
+  #   self.class.all << self
+  # end
 
 #find_by_name now exists in the module Findable for use by all classes.
   # def self.find_by_name(name)
