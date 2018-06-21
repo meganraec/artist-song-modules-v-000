@@ -1,9 +1,10 @@
 module Memorable
-  attr_accessor :songs, :artist, :name
-  
+
   def reset_all
+    self.all.clear
   end
 
   def count
+    self.all.count
   end
 end
