@@ -10,7 +10,7 @@ class Song
   @@songs = []
 
   def initialize
-    self.all << self
+    self.class.all << self
   end
 
 #find_by_name now exists in the module Findable for use by all classes.
