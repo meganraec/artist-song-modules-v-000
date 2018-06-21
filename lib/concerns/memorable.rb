@@ -10,8 +10,8 @@ module Memorable
   end
 
   module Instance methods
-    def initialize(name)
-      @name = name
+    def initialize
+      self.class.all << self
     end
   end
 end
