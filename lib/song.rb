@@ -26,10 +26,10 @@ class Song
   # def self.reset_all
   #   @@songs.clear
   # end
-
-  def to_param
-    name.downcase.gsub(' ', '-')
-  end
+#This method now exists in Paramable module for use by all classes.
+  # def to_param
+  #   name.downcase.gsub(' ', '-')
+  # end
 
 #This method has been moved to module Memorable for use by all classes.
   # def self.count
