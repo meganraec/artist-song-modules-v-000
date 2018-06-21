@@ -8,9 +8,10 @@ class Artist
 
   @@artists = []
 
-  def self.find_by_name(name)
-    @@artists.detect{|a| a.name == name}
-  end
+#find_by_name now exists in the module Findable for use by all classes. 
+  # def self.find_by_name(name)
+  #   @@artists.detect{|a| a.name == name}
+  # end
 
   def initialize
     @@artists << self
@@ -21,13 +22,15 @@ class Artist
     @@artists
   end
 
-  def self.reset_all
-    self.all.clear
-  end
+#reset_all now exists in the module Memorable for all classes. 
+  # def self.reset_all
+  #   self.all.clear
+  # end
 
-  def self.count
-    @@artists.count
-  end
+#This method has been moved to module Memorable for use by all classes. 
+  # def self.count
+  #   @@artists.count
+  # end
 
   def add_song(song)
     @songs << song
